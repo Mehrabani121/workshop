@@ -1,0 +1,53 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3,align center center"
+			"$rowConstraints": "[][][][][][][][][][][][][][][][]"
+			"$columnConstraints": "[][][][][][][][][][][][][][][]"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"title": "Cinema"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "movieNamelbl1"
+				"text": "inception"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "movieNamelbl1MouseClicked", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0 9 5,align center center,grow 0 0"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "movieNamelbl2"
+				"text": "interstellar"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "movieNamelbl2MouseClicked", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 9 0 5 5,align center center,grow 0 0"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buybtn1"
+				"text": "buy"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buybtn1MouseClicked", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 3 5 3 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buybtn2"
+				"text": "buy"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buybtn2MouseClicked", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 11 5"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "movieInflbl"
+				"text": "welcome :) if you click on movie name you can see information of that movie also you can click on buy button for buying ticket"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 7 15 9,align center center,grow 0 0"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 65, 40 )
+			"size": new java.awt.Dimension( 785, 525 )
+		} )
+	}
+}
